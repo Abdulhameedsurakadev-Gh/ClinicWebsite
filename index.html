@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Website | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-gray-800">Clinic Name</h1>
+                </div>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500">Departments</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500">Insurance</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+                </div>
+
+                <!-- Social Icons and Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Sign Up</button>
+                    <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Login</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-500 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">Home</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">About</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">Services</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">Departments</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">Insurance</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">Contact</a>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <button class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Sign Up</button>
+                        <button class="w-full bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden" style="background-image: url('./images/cheerful-ethnic-doctor-with-arms-crossed.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Our Clinic</h1>
+                <p class="text-lg md:text-xl mb-8">Providing exceptional healthcare services with compassion and expertise.</p>
+                <div class="space-x-4">
+                    <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Explore more</button>
+                    <button class="bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Sponsors and Partners</h2>
+
+            <!-- Partner Hospitals -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-gray-700 mb-6">Partner Hospitals</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="flex justify-center">
+                        <img src="icons/Hospital de Clínicas de Porto Alegre HCPA.svg" alt="Hospital de Clínicas de Porto Alegre HCPA" class="h-16 w-auto" loading="lazy">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="icons/Korle Bu Teaching Hospital in Accra Ghana.svg" alt="Korle Bu Teaching Hospital in Accra Ghana" class="h-16 w-auto" loading="lazy">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="icons/Sidra Kuwait Hospital.svg" alt="Sidra Kuwait Hospital" class="h-16 w-auto" loading="lazy">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="icons/Yale-New Haven Hospital.svg" alt="Yale-New Haven Hospital" class="h-16 w-auto" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insurance Companies -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-gray-700 mb-6">Insurance Companies</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="flex justify-center">
+                        <img src="icons/NHIS National Health Insurance Scheme Ghana.svg" alt="NHIS National Health Insurance Scheme Ghana" class="h-16 w-auto" loading="lazy">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="icons/glicolife-insurance.png" alt="Glicolife Insurance" class="h-16 w-auto" loading="lazy">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="icons/prudential insurance.png" alt="Prudential Insurance" class="h-16 w-auto" loading="lazy">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="icons/sic insurance.png" alt="SIC Insurance" class="h-16 w-auto" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pharmaceutical Sponsors -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-gray-700 mb-6">Pharmaceutical Sponsors</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="flex justify-center">
+                        <img src="icons/ernest-phamarceutical.png" alt="Ernest Pharmaceutical" class="h-16 w-auto" loading="lazy">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="icons/mgp-phamaceuticals.png" alt="MGP Pharmaceuticals" class="h-16 w-auto" loading="lazy">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="icons/tobinco-phamaceuticals.png" alt="Tobinco Pharmaceuticals" class="h-16 w-auto" loading="lazy">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="icons/unicom-phamarceutials.png" alt="Unicom Pharmaceuticals" class="h-16 w-auto" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">About Our Clinic</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-heartbeat text-blue-500 text-3xl mr-4"></i>
+                        <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">We are committed to providing safe, affordable, and professional healthcare for individuals and families. Our mission is to deliver compassionate care that prioritizes your well-being and health.</p>
+                    <p class="text-gray-600 mb-4">With a team of experienced doctors, nurses, and specialists, we offer a wide range of services including preventive care, diagnostics, treatments, and emergency services. We believe in building long-term relationships with our patients, ensuring personalized care tailored to your unique needs.</p>
+                    <p class="text-gray-600 mb-6">Our values are rooted in integrity, excellence, and community. We strive to create a welcoming environment where every patient feels valued and supported on their journey to better health.</p>
+                    <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">Learn More</button>
+                </div>
+                <div class="shadow-lg rounded-xl overflow-hidden">
+                    <img src="images/martha-dominguez-de-gouveia-nMyM7fxpokE-unsplash (1).jpg" alt="About Us" class="w-full h-auto" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">Our Services</h2>
+            <p class="text-center text-gray-600 mb-12">We offer a comprehensive range of healthcare services to meet all your medical needs.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- General Consultation -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/vitaly-gariev-6eDFSCSwkSo-unsplash.jpg" alt="General Consultation" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">General Consultation</h3>
+                        <p class="text-gray-600 mb-4">Receive comprehensive medical advice and personalized care from our experienced healthcare professionals.</p>
+                        <div class="flex space-x-2">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</button>
+                            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Laboratory Test -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-asadphoto-31587558.jpg" alt="Laboratory Test" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Laboratory Test</h3>
+                        <p class="text-gray-600 mb-4">Get accurate diagnostic tests and lab results to monitor your health and detect conditions early.</p>
+                        <div class="flex space-x-2">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</button>
+                            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ultrasound & Scans -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-mart-production-7089629.jpg" alt="Ultrasound & Scans" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Ultrasound & Scans</h3>
+                        <p class="text-gray-600 mb-4">Advanced imaging services including ultrasounds and scans for detailed health assessments.</p>
+                        <div class="flex space-x-2">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</button>
+                            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pharmacy -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/national-cancer-institute-NNpo-liY5aU-unsplash.jpg" alt="Pharmacy" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Pharmacy</h3>
+                        <p class="text-gray-600 mb-4">Access a full range of medications and health products with expert advice from our on-site pharmacy.</p>
+                        <div class="flex space-x-2">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</button>
+                            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talk to a Doctor CTA Section -->
+    <section class="py-24 relative" style="background-image: url('./images/online-marketing-hIgeoQjS_iE-unsplash.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
+                <div class="text-center md:text-left mb-8 md:mb-0" style="color: #003366;">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Talk to a Doctor</h2>
+                    <p class="text-lg md:text-xl">Get expert medical advice instantly. Our doctors are available 24/7.</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <button class="bg-orange-500 text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-orange-600 transition duration-300">Call Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">Why Choose Us</h2>
+            <p class="text-center text-gray-600 mb-12">Discover what sets our clinic apart and why patients trust us for their healthcare needs.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Experienced Doctors -->
+                <div class="why-choose-us-item bg-white shadow-lg rounded-lg p-6 text-center">
+                    <div class="why-choose-us-icon mb-4">
+                        <i class="fas fa-user-md text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="why-choose-us-title text-xl font-bold text-gray-800 mb-2">Experienced Doctors</h3>
+                    <p class="why-choose-us-desc text-gray-600">Our team of highly qualified and experienced doctors provides top-notch medical care.</p>
+                </div>
+                <!-- Modern Equipment -->
+                <div class="why-choose-us-item bg-white shadow-lg rounded-lg p-6 text-center">
+                    <div class="why-choose-us-icon mb-4">
+                        <i class="fas fa-cogs text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="why-choose-us-title text-xl font-bold text-gray-800 mb-2">Modern Equipment</h3>
+                    <p class="why-choose-us-desc text-gray-600">We use the latest technology and modern equipment for accurate diagnoses and treatments.</p>
+                </div>
+                <!-- Patient-Centered Care -->
+                <div class="why-choose-us-item bg-white shadow-lg rounded-lg p-6 text-center">
+                    <div class="why-choose-us-icon mb-4">
+                        <i class="fas fa-heart text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="why-choose-us-title text-xl font-bold text-gray-800 mb-2">Patient-Centered Care</h3>
+                    <p class="why-choose-us-desc text-gray-600">Our approach focuses on the individual needs of each patient, ensuring personalized care.</p>
+                </div>
+                <!-- Quick Appointments -->
+                <div class="why-choose-us-item bg-white shadow-lg rounded-lg p-6 text-center">
+                    <div class="why-choose-us-icon mb-4">
+                        <i class="fas fa-clock text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="why-choose-us-title text-xl font-bold text-gray-800 mb-2">Quick Appointments</h3>
+                    <p class="why-choose-us-desc text-gray-600">Book appointments easily and get seen quickly without long waiting times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors / Medical Team Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">Meet Our Medical Team</h2>
+            <p class="text-center text-gray-600 mb-12">Our team of experienced doctors is dedicated to providing exceptional healthcare services with compassion and expertise.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Doctor 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <img src="./images/vitaly-gariev-XSPFs82j_v0-unsplash.jpg" alt="Dr. John Doe" class="w-20 h-20 rounded-full mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. John Doe</h3>
+                    <p class="text-blue-500 mb-2">General Practitioner</p>
+                    <p class="text-gray-600 mb-4">Dr. Doe has over 15 years of experience in family medicine, focusing on preventive care and patient education.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <img src="./images/vitaly-gariev-XqMo4OlBnh0-unsplash.jpg" alt="Dr. Jane Smith" class="w-20 h-20 rounded-full mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. Jane Smith</h3>
+                    <p class="text-blue-500 mb-2">Pediatrician</p>
+                    <p class="text-gray-600 mb-4">Dr. Smith specializes in pediatric care, ensuring the health and well-being of children from infancy to adolescence.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <!-- Doctor 3 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <img src="./images/portrait-african-american-woman-working-as-doctor.jpg" alt="Dr. Emily Davis" class="w-20 h-20 rounded-full mx-auto mb-4" loading="lazy">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. Emily Davis</h3>
+                    <p class="text-blue-500 mb-2">Diagnostic Specialist</p>
+                    <p class="text-gray-600 mb-4">Dr. Davis is an expert in diagnostics, using advanced technology to provide accurate and timely medical assessments.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Call Us Now CTA Section -->
+    <section class="py-24 relative" style="background-image: url('./images/abdulai-sayni-u2EjDa_hYJI-unsplash.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 flex flex-col md:flex-row justify-between items-center h-full px-4 sm:px-6 lg:px-8">
+            <div class="text-white text-center md:text-left mb-8 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Call Us Now</h2>
+                <p class="text-lg md:text-xl mb-8 md:mb-0">We're here to help 24/7. Reach out for immediate assistance.</p>
+            </div>
+            <div class="text-center md:text-right">
+                <button class="bg-orange-500 text-white px-6 sm:px-8 py-4 rounded-lg text-lg sm:text-xl font-bold hover:bg-orange-600 transition duration-300">Call Now</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions</h2>
+            <p class="text-center text-gray-600 mb-12">Find answers to the questions we receive most often.</p>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white shadow-lg rounded-lg border border-gray-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:bg-gray-50 hover:bg-gray-50 transition duration-200" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-800">How do I book an appointment?</h3>
+                            <i class="fas fa-plus text-gray-500"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-600">You can book an appointment by calling our clinic directly at (123) 456-7890 or by using our online booking system on our website. We recommend booking in advance to ensure availability.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white shadow-lg rounded-lg border border-gray-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:bg-gray-50 hover:bg-gray-50 transition duration-200" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-800">What insurance do you accept?</h3>
+                            <i class="fas fa-plus text-gray-500"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-600">We accept a wide range of insurance plans, including NHIS, Prudential, SIC, and Glicolife. Please contact our billing department to verify if your specific plan is covered.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white shadow-lg rounded-lg border border-gray-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:bg-gray-50 hover:bg-gray-50 transition duration-200" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-800">What are your clinic hours?</h3>
+                            <i class="fas fa-plus text-gray-500"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-600">Our clinic is open Monday to Friday from 8:00 AM to 6:00 PM, and Saturdays from 9:00 AM to 2:00 PM. We are closed on Sundays and public holidays.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="bg-white shadow-lg rounded-lg border border-gray-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:bg-gray-50 hover:bg-gray-50 transition duration-200" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-800">What should I bring to my appointment?</h3>
+                            <i class="fas fa-plus text-gray-500"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-600">Please bring your ID, insurance card, any relevant medical records, and a list of current medications. If it's your first visit, arrive 15 minutes early to complete registration.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="bg-white shadow-lg rounded-lg border border-gray-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:bg-gray-50 hover:bg-gray-50 transition duration-200" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-800">How do I prepare for my visit?</h3>
+                            <i class="fas fa-plus text-gray-500"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-600">Prepare by writing down your symptoms, questions, and any concerns. Wear comfortable clothing, and if applicable, bring items like glasses or hearing aids. Arrive on time and be ready to provide your medical history.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-gray-600">Still have questions? <a href="#" class="text-blue-500 hover:text-blue-600">Contact us</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-400">Home</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Services</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Doctors</a></li>
+                        <li><a href="#" class="hover:text-blue-400">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-400">FAQ</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Help</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-400">Career</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Blogs</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="md:col-span-2">
+                    <h3 class="text-lg font-semibold mb-4">Stay Updated</h3>
+                    <p class="mb-4">Sign up for our newsletter to get the latest information.</p>
+                    <form class="flex flex-col sm:flex-row">
+                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-l-lg text-gray-800 focus:outline-none">
+                        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-r-lg hover:bg-blue-600 mt-2 sm:mt-0">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Locations -->
+            <div class="mt-12">
+                <h3 class="text-lg font-semibold mb-4">Our Locations</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-semibold">Main Clinic</h4>
+                        <p>123 Health St, City, State 12345</p>
+                        <p>Phone: (123) 456-7890</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-semibold">Branch Office</h4>
+                        <p>456 Wellness Ave, City, State 67890</p>
+                        <p>Phone: (987) 654-3210</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-semibold">Emergency Center</h4>
+                        <p>789 Care Blvd, City, State 54321</p>
+                        <p>Phone: (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2025 Clinic Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
